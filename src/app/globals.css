@@ -5,17 +5,79 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-color:#5DBCFC
 }
 
+body,html{
+  transition:all 0.2s ease-in-out;
+    margin: 0;
+    padding: 0;
+  
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+ 
+    --secondary-color:#52A2E8;
   }
+}
+
+
+*::selection{
+  background-color:var(--main-color);
+  color:white;
+  box-sizing:border-box;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+
+}
+
+.box::before{
+  content:"";
+  position:absolute;
+  background: linear-gradient(45deg,var(--main-color) ,var(--main-color) ); /* Adjust colors as needed */
+  inset:-15px 100px;
+  transition:all 0.3s ease-in;
+  animation:rotate infinite linear 4s;
+
+}
+.box:hover:before{
+  inset:-20px 0px;
+
+}
+
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+  }
+}
+.box::after{
+  content:"";
+  position:absolute;
+  inset:6px;
+  background:#0D47A1;
+  border-radius:50%;
+  z-index:12
+}
+
+.content{
+  position:absolute;
+  inset:20px;
+  z-index:22;
+  border-radius:50%;
+  overflow:hidden;
 }
