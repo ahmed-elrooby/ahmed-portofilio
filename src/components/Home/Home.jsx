@@ -1,10 +1,10 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-import Lottie from "lottie-react";
-import LabtopAnimation from "../../Images/home.json"; // تأكد من أن المسار صحيح وأن الامتداد JSON
 import welcome from "../../Images/welcom.json";
 import Introduce from '../Introduce/Introduce';
 import { motion } from 'framer-motion';
+import Image from "next/image";
+import Lottie from "react-lottie-player";
 
 const Home = () => {
   return (
@@ -76,11 +76,7 @@ const Home = () => {
               scale: 1,
             }}
            >
-           <Lottie
-              className="max-w-full relative w-[350px] md:w-[700px]"
-              loop={true}
-              animationData={LabtopAnimation}
-            />
+          <Image src={require("../../Images/home.gif")} width={400}/>
            </motion.div>
           </div>
         </div>
