@@ -1,10 +1,10 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-// import Lottie from "lottie-react";
-// import LabtopAnimation from "../../Images/home.json"; // تأكد من أن المسار صحيح وأن الامتداد JSON
-// import welcome from "../../Images/welcom.json";
+import LabtopAnimation from "../../Images/home.json"; 
+import welcome from "../../Images/welcom.json";
 import Introduce from '../Introduce/Introduce';
 import { motion } from 'framer-motion';
+import Lottie from "react-lottie";
 
 const Home = () => {
   return (
@@ -26,11 +26,11 @@ const Home = () => {
              }}
             className="mb-4 text-[30px] md:text-[50px] flex gap-1 items-center font-extrabold capitalize text-[#5dbcfc]">
               Hi everyone! 
-              {/* <Lottie
+              <Lottie
                 className="max-w-full w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                 loop={true}
                 animationData={welcome}
-              /> */}
+              />
             </motion.h1>
             <div className="md:text-[45px] text-[25px] font-bold relative after:animate-pulse after:absolute dark:text-white text-gray-600 after:w-[250px] after:h-[250px] after:bg-[#5dbcfc30] after:content-[''] after:bottom-[150px] after:rounded-full after:right-[-36px]">
            <motion.div
@@ -76,11 +76,11 @@ const Home = () => {
               scale: 1,
             }}
            >
-           {/* <Lottie
+           <Lottie
               className="max-w-full relative w-[350px] md:w-[700px]"
               loop={true}
               animationData={LabtopAnimation}
-            /> */}
+            />
            </motion.div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-// import Lottie from "lottie-react";
-// import aboutLottie from "../../Images/aboutLottie.json";
-// import about from "../../Images/about.json";
+import aboutLottie from "../../Images/aboutLottie.json";
+import about from "../../Images/about.json";
 import ProfisSkills from "../ProfisSkills/ProfisSkills";
 import Services from "../Services/Services";
 import { motion } from "framer-motion";
+import Lottie from "react-lottie";
 
 const About = () => {
   return (
@@ -26,11 +26,11 @@ const About = () => {
           >
             <h1 className="md:text-[30px]  text-[20px] flex items-center capitalize font-bold">
               Here's a quick introduction about me
-              {/* <Lottie
-                animationData={about}
+              <Lottie
+                animationData={aboutLottie}
                 className="md:w-[100px] w-[50px] h-[50px] md:h-[100px] max-w-full"
                 loop={true}
-              /> */}
+              />
             </h1>
             <p className="text-[21px] leading-[2] capitalize">
               "Hi, I'm Ahmed Eid, a Frontend Developer from{" "}
