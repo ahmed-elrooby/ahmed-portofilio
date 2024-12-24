@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Lottie from "lottie-react";
 import aboutLottie from "../../Images/aboutLottie.json";
 import about from "../../Images/about.json";
 import ProfisSkills from "../ProfisSkills/ProfisSkills";
 import Services from "../Services/Services";
 import { motion } from "framer-motion";
+import Lottie from "react-lottie-player";
 
 const About = () => {
   return (
@@ -30,6 +30,8 @@ const About = () => {
                 animationData={about}
                 className="md:w-[100px] w-[50px] h-[50px] md:h-[100px] max-w-full"
                 loop={true}
+                play
+                style={{ width: 150, height: 150 }}
               />
             </h1>
             <p className="text-[21px] leading-[2] capitalize">

@@ -21,7 +21,9 @@ const Services = () => {
       }}
     
     className="flex flex-col items-center justify-center gap-[40px]">
-<h1 className='font-bold text-[25px] md:text-[35px] justify-center text-[--main-color] flex text-center items-center '>What I Can Do For You <Lottie className='w-[100px] h-[100px]' animationData={arrow} loop={true}/></h1>
+<h1 className='font-bold text-[25px] md:text-[35px] justify-center text-[--main-color] flex text-center items-center '>What I Can Do For You 
+  <Lottie className='w-[100px] h-[100px]' animationData={arrow}   play loop={true}/>
+  </h1>
 <div className='flex items-center flex-wrap justify-center gap-[15px]'>
 <div className="flex rounded-lg hover:shadow-lg transition-all group hover:bg-[--main-color]  flex-col justify-center text-center items-center h-[300px] w-[350px] gap-1 border-2 border-[--main-color]">
     <h1 className='font-bold text-[--main-color] text-[30px] group-hover:text-white'>web development</h1>

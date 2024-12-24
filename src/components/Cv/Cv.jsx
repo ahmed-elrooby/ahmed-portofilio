@@ -1,9 +1,9 @@
 "use client"
 import React from 'react';
 import download from "../../Images/download.json"
-import Lottie from 'lottie-react';
 import { motion } from 'framer-motion';
 import Link from "next/link";
+import Lottie from 'react-lottie-player';
 
 const Cv = () => {
   return<>
@@ -26,6 +26,7 @@ const Cv = () => {
 >
   <span className="relative z-10 transition-opacity duration-300 opacity-100 hover:opacity-100">Download CV</span>
   <Lottie
+    play
     className="relative w-[50px] h-[50px] z-10"
     loop={true}
     animationData={download}

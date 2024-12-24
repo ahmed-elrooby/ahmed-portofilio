@@ -3,8 +3,8 @@ import { Typewriter } from "react-simple-typewriter";
 import welcome from "../../Images/welcom.json";
 import Introduce from '../Introduce/Introduce';
 import { motion } from 'framer-motion';
-import Image from "next/image";
 import Lottie from "react-lottie-player";
+import home from "../../Images/home.json"
 
 const Home = () => {
   return (
@@ -30,6 +30,8 @@ const Home = () => {
                 className="max-w-full w-[60px] h-[60px] md:w-[100px] md:h-[100px]"
                 loop={true}
                 animationData={welcome}
+                play
+                style={{ width: 150, height: 150 }}
               />
             </motion.h1>
             <div className="md:text-[45px] text-[25px] font-bold relative after:animate-pulse after:absolute dark:text-white text-gray-600 after:w-[250px] after:h-[250px] after:bg-[#5dbcfc30] after:content-[''] after:bottom-[150px] after:rounded-full after:right-[-36px]">
@@ -76,7 +78,7 @@ const Home = () => {
               scale: 1,
             }}
            >
-          <Image src={require("../../Images/home.gif")} width={400}/>
+            <Lottie animationData={home} loop play/>
            </motion.div>
           </div>
         </div>
