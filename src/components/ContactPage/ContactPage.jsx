@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
+import Lottie from "lottie-react";
 import contact from "../../Images/contact.json";
 
 import { FaFilePdf, FaRegUser } from "react-icons/fa";
 import { IoIosHome, IoMdMail } from "react-icons/io";
 import { HiMiniPresentationChartLine } from "react-icons/hi2";
 import Link from "next/link";
+import successAnimation from "../../Images/loading.json"
 import { motion } from 'framer-motion';
 import Form from "./Form";
-import Lottie from "react-lottie";
 
 const ContactPage = () => {
 

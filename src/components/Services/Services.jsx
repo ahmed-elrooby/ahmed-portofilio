@@ -1,8 +1,8 @@
+import Lottie from 'lottie-react'
 import React from 'react'
 import arrow from "../../Images/arrow.json"
 import { FaLaptopCode,FaCode,FaRegPlayCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import Lottie from 'react-lottie';
 
 const Services = () => {
   return <>

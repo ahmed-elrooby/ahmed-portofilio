@@ -1,10 +1,10 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-import LabtopAnimation from "../../Images/home.json"; 
+import Lottie from "lottie-react";
+import LabtopAnimation from "../../Images/home.json"; // تأكد من أن المسار صحيح وأن الامتداد JSON
 import welcome from "../../Images/welcom.json";
 import Introduce from '../Introduce/Introduce';
 import { motion } from 'framer-motion';
-import Lottie from "react-lottie";
 
 const Home = () => {
   return (
