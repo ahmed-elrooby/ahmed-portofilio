@@ -1,5 +1,7 @@
+"use client"
 import Link from 'next/link'
 import notFoundImage from "../../Images/error.svg"; 
+import Image from 'next/image'
 const NotFoundPage = () => {
 
 
@@ -16,7 +18,7 @@ const NotFoundPage = () => {
           home page
         </Link>
       </div>
-      <img src={notFoundImage} alt='notfound'  />
+      <Image src={notFoundImage} alt='notfound' width={400} height={300} />
     </div>
   </>
 }
