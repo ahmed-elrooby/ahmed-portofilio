@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import notFoundImage from "../../Images/error.svg"; 
-import Image from 'next/image'
 const NotFoundPage = () => {
 
 
@@ -17,7 +16,7 @@ const NotFoundPage = () => {
           home page
         </Link>
       </div>
-      <Image src={notFoundImage} alt='notfound' width={400} height={300} />
+      <img src={notFoundImage} alt='notfound'  />
     </div>
   </>
 }

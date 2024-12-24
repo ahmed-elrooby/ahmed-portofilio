@@ -56,7 +56,6 @@ const ContactPage = () => {
               animationData={contact}
               loop={true}
               play
-              style={{ width: 150, height: 150 }}
               className="max-w-full w-[250px] h-[250px]  md:w-[300px] md:h-[300px]  "
             />
           </motion.div>
