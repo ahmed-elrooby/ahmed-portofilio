@@ -31,7 +31,6 @@ const Home = () => {
                 loop={true}
                 animationData={welcome}
                 play
-                style={{ width: 150, height: 150 }}
               />
             </motion.h1>
             <div className="md:text-[45px] text-[25px] font-bold relative after:animate-pulse after:absolute dark:text-white text-gray-600 after:w-[250px] after:h-[250px] after:bg-[#5dbcfc30] after:content-[''] after:bottom-[150px] after:rounded-full after:right-[-36px]">
@@ -78,7 +77,7 @@ const Home = () => {
               scale: 1,
             }}
            >
-            <Lottie animationData={home} loop play/>
+            <Lottie animationData={home} className="w-full" loop play/>
            </motion.div>
           </div>
         </div>
