@@ -1,9 +1,6 @@
-"use client"; // تأكد من أنها في أعلى الملف
+import NotFoundPage from "@/components/NotfoundPage/NotfoundPage";
 
-import dynamic from "next/dynamic";
 
-// تحميل المكون NotFoundPage بشكل ديناميكي وتعطيل SSR
-const NotFoundPage = dynamic(() => import('@/components/NotfoundPage/NotFoundPage'), { ssr: false });
 
 const Notfound = () => {
   return (
